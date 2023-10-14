@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(226, 221, 221);
+}
+
+.sidebar {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 20px;
+    background-color: rgb(183, 192, 201);
+    margin-bottom: 0px;
+    background-image: url('paises.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+
+h1{
+    font-weight: 1000;
+    font-size: 77px;
+    color: #000000;
+    transform: scaleY(1.2);
+}
+
+h2{
+    font-weight: 1000;
+    font-size: 33px;
+    color: #000000;
+    transform: scaleY(1.2);
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    font-weight: 1000;
+    font-size: 27px;
+    color: #000000;
+    transform: scaleY(1.2);
+    margin-top: 1px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.carta{
+    width: 300px;
+    height:250px;
+    border-radius: 10px;
+margin: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.1s;
+}
+
+.Colombia{
+    background-image: url('colombia.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.Venezuela{
+    background-image: url('venezuela.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.Mexico{
+    background-image: url('mexico.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.usa{
+    background-image: url('usa.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.k{
+    background-image: url('reino.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.canada{
+    background-image: url('canada.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.fran{
+    background-image: url('francia.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.haiti{
+    background-image: url('haiti.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.brasil{
+    background-image: url('brasil.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.portugal{
+    background-image: url('portugal.webp'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.angola{
+    background-image: url('angola.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1169px) {
+    .cartas{
+        gap: 70px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .cartas{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .cartas{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .cartas{
+        gap: 5px;
+    }
+}
+
+@media (max-width: 977px) {
+    .cartas{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .cartas{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 699px) {
+    .cartas{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 655px) {
+    .cartas{
+        gap: 5px;
+    }
+    .carta{
+        width: 250px;
+        height:250px;
+    }
+}
+
+@media (max-width: 549px) {
+    .carta{
+        width: 200px;
+        height:200px;
+    }
+}
+
+
+@media (max-width: 461px) {
+    .carta{
+        width: 250px;
+        height:250px;
+    }
+    .cartas{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 57px;
+    }
+    
+    h2{
+        font-size: 23px;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+
+    .titulo{
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .carta{
+        width: 200px;
+        height:200px;
+    }
+}
+
+@media (max-width: 350px) {
+    .carta{
+        width: 170px;
+        height:170px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+
+    .titulo{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 291px) {
+    .carta{
+        width: 70px;
+        height:70px;
+    }
+    h1{
+        font-size: 33px;
+    }
+    
+    h2{
+        font-size: 17px;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+
+    .titulo{
+        font-size: 13px;
+    }
+}
